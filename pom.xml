@@ -1,0 +1,15 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+ <groupId>com.sample.app</groupId>
+  <artifactId>Application</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+
+<modules>
+   <module>TESTWAR</module>
+   <module>TESTEAR</module>
+</modules>
+
+  
+</project>

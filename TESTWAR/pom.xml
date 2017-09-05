@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+ <groupId>com.sample.app</groupId>
+  <artifactId>ApplicationWAR</artifactId>
+  <version>1</version>
+  <packaging>war</packaging>
+ 
+ <build>
+ 
+ <sourceDirectory>src</sourceDirectory>
+ <outputDirectory>WebContent/WEB-INF/classes</outputDirectory>
+ 
+	<resources>
+        <resource>
+            <directory>src</directory>
+            <includes>                      
+                <include>**/*.xml</include>
+            </includes>
+        </resource>
+    </resources>
+ 
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <webappDirectory>WebContent</webappDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+	 <finalName>application</finalName>
+  </build>
+ 
+</project>
